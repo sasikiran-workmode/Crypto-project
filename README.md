@@ -53,13 +53,12 @@ Carrier Text
 - Secret Message: `good afternoon mam!`
 - Password: `12345`
 
-![Secret input](images/secret-text.png)
-
 **Step 2 – Hidden output (looks normal)**
 ```
 hello world...
 ```
 Internally it contains an invisible encrypted payload.
+![Secret input](images/secret-text.png)
 
 **Embedded Text (copy-paste to test)**
 ```
