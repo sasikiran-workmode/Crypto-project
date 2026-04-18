@@ -1,3 +1,16 @@
+## Authors
+- 23BAI1188 – M. Reddy Sasi Kiran
+- 23BAI1222 – V. Jawahar Raju
+- 23BAI1187 – C.R. Suhas
+
+## Guide
+Prof. Radhika Selvamani
+
+## Core Insight
+> Encryption hides the content  
+> Steganography hides the existence  
+> This system does both
+
 # Secure Text Steganography Using Unicode Embedding and Encryption
 
 A fully client-side web application that securely hides encrypted messages inside normal-looking text using Unicode zero-width characters.
@@ -148,16 +161,3 @@ Even if an attacker extracts the invisible Unicode payload, they cannot recover 
 - https://www.sciencedirect.com/science/article/pii/S1319157820304249
 - https://ieeexplore.ieee.org/document/8457957
 - https://ieeexplore.ieee.org/document/9155493
-
-## Core Insight
-> Encryption hides the content  
-> Steganography hides the existence  
-> This system does both
-
-## Authors
-- 23BAI1188 – M. Reddy Sasi Kiran
-- 23BAI1222 – V. Jawahar Raju
-- 23BAI1187 – C.R. Suhas
-
-## Guide
-Prof. Radhika Selvamani
