@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Secure Text Steganography Using Unicode Embedding and Encryption</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="brand">
+          <div class="brand__title">Secure Text Steganography Using Unicode Embedding and Encryption</div>
+          <div class="brand__subtitle">
+            Encrypt a secret, then cloak it using invisible Unicode characters (client-side only).
+          </div>
+        </div>
+        <div class="notice" role="note">
+          Passwords are <strong>exactly 5 digits</strong> in v1 (low entropy; demo/learning only).
+        </div>
+      </header>
+
+      <main class="panel" aria-label="Steganography tool">
+        <div class="tabs" role="tablist" aria-label="Mode">
+          <button id="tab-hide" class="tab tab--active" type="button" role="tab" aria-selected="true" aria-controls="view-hide">
+            Hide
+          </button>
+          <button id="tab-reveal" class="tab" type="button" role="tab" aria-selected="false" aria-controls="view-reveal">
+            Reveal
+          </button>
+        </div>
+
+        <section id="compat" class="compat" hidden></section>
+
+        <section id="view-hide" class="view view--active" role="tabpanel" aria-labelledby="tab-hide">
+          <div class="grid">
+            <div class="field">
+              <label for="hide-secret">Secret text</label>
+              <textarea id="hide-secret" rows="5" placeholder="Type the secret you want to hide (supports emoji and any language)."></textarea>
+              <div id="hide-secret-err" class="field__error" aria-live="polite"></div>
+              <div id="hide-size" class="field__hint"></div>
+            </div>
+
+            <div class="field">
+              <label for="hide-cover">Cover text (optional)</label>
+              <textarea id="hide-cover" rows="4" placeholder="Optional carrier text. If blank, we auto-generate a safe cover (2+ words)."></textarea>
+              <div id="hide-cover-err" class="field__error" aria-live="polite"></div>
+              <div class="field__hint">Tip: Some apps may strip invisible characters. Test your target app.</div>
+            </div>
+
+            <div class="field field--row">
+              <div class="field__col">
+                <label for="hide-password">5-digit password</label>
+                <input id="hide-password" inputmode="numeric" autocomplete="one-time-code" maxlength="5" placeholder="e.g. 12345" />
+                <div id="hide-password-err" class="field__error" aria-live="polite"></div>
+              </div>
+              <div class="field__col field__col--actions">
+                <button id="btn-hide" class="btn btn--primary" type="button">Hide &amp; Encrypt</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="hide-output">Carrier output (looks normal, contains hidden payload)</label>
+              <textarea id="hide-output" rows="4" readonly placeholder="Your cloaked message will appear here."></textarea>
+              <div class="actions">
+                <button id="btn-copy-carrier" class="btn" type="button" disabled>Copy output</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="view-reveal" class="view" role="tabpanel" aria-labelledby="tab-reveal" hidden>
+          <div class="grid">
+            <div class="field">
+              <label for="reveal-carrier">Carrier message</label>
+              <textarea id="reveal-carrier" rows="6" placeholder="Paste the message that contains an invisible payload."></textarea>
+              <div id="reveal-carrier-err" class="field__error" aria-live="polite"></div>
+            </div>
+
+            <div class="field field--row">
+              <div class="field__col">
+                <label for="reveal-password">5-digit password</label>
+                <input id="reveal-password" inputmode="numeric" autocomplete="one-time-code" maxlength="5" placeholder="e.g. 12345" />
+                <div id="reveal-password-err" class="field__error" aria-live="polite"></div>
+              </div>
+              <div class="field__col field__col--actions">
+                <button id="btn-reveal" class="btn btn--primary" type="button">Reveal &amp; Decrypt</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="reveal-output">Revealed secret</label>
+              <textarea id="reveal-output" rows="4" readonly placeholder="The revealed secret will appear here."></textarea>
+              <div class="actions">
+                <button id="btn-copy-secret" class="btn" type="button" disabled>Copy secret</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="status">
+          <div id="status" class="status__box" role="status" aria-live="polite"></div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__small">
+          Runs entirely in your browser. No servers, no storage, no analytics.
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
