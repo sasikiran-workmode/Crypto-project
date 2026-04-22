@@ -1,0 +1,28 @@
+this was the project i was doing so, what i want u to do is create me a ppt based on all the chat i had as i shown in "Chatgpt-Crypto Project Explanation.txt" pls make sure evey explanation like why this and total workflow should be there. and pls dont make it less connected with previous slides. dont include any emojies. prefer clean professional ppt. dont make the text very verbose. dont make black background ppt, i always prefer white background and navy blue blend for outlines or anyother use.
+
+what i need in ppt:
+1. 1st slide suitable project title for this and 3 names with registered numbers, they are 23BAI1188- M.Reddy Sasi Kiran , 23BAI1222- V.Jawahar Raju , 23BAI1187- C.R. Suhas
+2. in 2nd slide tell in what what places we use or we can use this project applicatinos to build curiosity. after reading this they should be like woww i can use this here also?? but keep it brief and dont make it lengthy cause i said keep professinal.
+3. from here to last before slide u should keep the information like: 
+        a. tell me tradional or baseline encryption model which just inserts the payload at the start or end which WhatsApp and others will easily remove.
+	b. now start explaining our project retrival steps starting from start to end and why that particular thing is used and whats its role in here. thats it i dont need anything else (of course u dont need to fit everything in one slide but dont make lengthy slides).
+	c. a proper flowchart(spread across the page dont just fix it in small place.) of retrival flow. (only one or 2 words in a flow box and arrows thats it.)
+	d. then after explaining retrival explain similarly the extraction of text also.
+4. now for the last slide in brief tell how great our project is(dont give title like "how great this project is" just explain how great in brief in points.)
+
+any where in the ppt dont use any kinda paragraphs. keep everything in points.
+
+any my mam instructed me to arrange all these in the format:
+	1. Title 
+
+	2.Introduction
+
+	3.Literature Review
+
+	4.Problem
+
+	5.Analysis
+
+	6. Conclusion
+
+so pls make everything in this main headings format and gimme a final pptx to download. pls dont over check for the generated pptx and exhaust the limit.before the free limit expires pls gimme a downloadable pptx
